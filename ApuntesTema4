@@ -1,0 +1,34 @@
+# Apuntes sobre SVN (Subversion)
+
+## Introducción a SVN
+Subversion (SVN) es un sistema de control de versiones diseñado específicamente para rastrear cambios en archivos y directorios. Es muy útil en entornos de desarrollo de software para mantener un historial de todas las modificaciones.
+
+## Conceptos Básicos de SVN
+
+- **Repositorio SVN**: Es una base de datos centralizada que almacena archivos con su historial de revisiones.
+- **Checkout**: Proceso de descarga de una copia del contenido del repositorio a tu máquina local.
+- **Commit**: Acto de subir los cambios locales al repositorio SVN, creando una nueva revisión en el proceso.
+- **Update**: Actualiza tu copia de trabajo local con los cambios desde el repositorio.
+- **Revisión**: Un número asignado a cada commit realizado en el repositorio.
+
+## Comandos Básicos de SVN
+
+- **svn checkout [URL]**: Descarga una copia del repositorio en la URL especificada.
+- **svn add [archivo/directorio]**: Añade un nuevo archivo o directorio al control de versiones.
+- **svn commit -m "mensaje"**: Sube los cambios al repositorio con un mensaje descriptivo.
+- **svn update**: Actualiza tu copia local con los últimos cambios del repositorio.
+- **svn log**: Muestra el historial de commits en el repositorio.
+
+## Trabajar con Ramas en SVN
+
+- **svn copy [URL origen] [URL destino] -m "Mensaje"**: Crea una rama copiando de una URL a otra dentro del repositorio.
+- **svn merge [URL rama]**: Fusiona cambios desde una rama a tu copia de trabajo local.
+
+## Resolución de Conflictos
+
+- SVN puede indicar conflictos cuando los cambios locales chocan con los cambios subidos al repositorio.
+- Es importante resolver estos conflictos manualmente y luego realizar un commit para actualizar el repositorio.
+
+## Conclusión
+
+SVN es una herramienta poderosa para el control de versiones que facilita la colaboración y el seguimiento de cambios en proyectos de desarrollo. Aunque ha sido parcialmente suplantado por sistemas más modernos como Git, sigue siendo relevante en ciertos entornos y proyectos.
